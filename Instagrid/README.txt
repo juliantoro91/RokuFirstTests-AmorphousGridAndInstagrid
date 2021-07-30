@@ -1,4 +1,1 @@
-Simple Roku Scene Graph channel containing an empty scene.
-This can be enhanced with the following features:
-1)      Add grid with video preview (this adds the video grid)
-2)      Add loading indicator component
+This is a kind of "Instagram" in which every focused element play a preview of the content, and by selecting it you display full content with a description, title, and other attributes.
