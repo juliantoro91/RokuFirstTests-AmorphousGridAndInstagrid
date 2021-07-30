@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GridScreen" extends="Group"  initialFocus="RowList">
+    <script type="text/brightscript" uri="GridScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+	<interface>
+        <!-- Specifies the content for the Grid -->
+        <field id="content" type="node" alias="content" />
+        <field id="itemFocused" type="integer" alwaysNotify="true" />
+    </interface>
+    <children>
+    	<LayoutGroup
+    		id="fieldLabels"
+        	translation="[865,115]"
+        	layoutDirection="vert"
+            horizAlignment="left"
+            itemSpacings="[5]" >
+	        <Label
+	        	text="Title:"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumBoldSystemFont" />
+			<Label
+				text="Artist:"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumBoldSystemFont" />
+		    <Label
+		       	text="Date:"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumBoldSystemFont" />
+	   	</LayoutGroup>
+        <LayoutGroup
+        	translation="[950,115]"
+        	layoutDirection="vert"
+            horizAlignment="left"
+            itemSpacings="[5]" >
+	        <Label
+		       	id="titleLabel"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumSystemFont" />
+			<Label
+		       	id="artistLabel"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumSystemFont" />
+		    <Label
+		       	id="releaseLabel"
+		       	width="250"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumSystemFont" />
+	   	</LayoutGroup>
+	   	<Group id="posters" translation="[0, 0]" />
+	   	<Rectangle id="focus" color="0xD0E64BFF" opacity="0.3"/>
+    </children>
+</component>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="DetailsScreen" extends="Group" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+
+	<script type="text/brightscript" uri="pkg:/components/DetailsScreen/DetailsScreen.brs" />
+	
+	<interface>
+		<field id="content" type="node" alias="content" />
+        <field id="itemFocused" type="integer" alwaysNotify="true" />
+	</interface>
+	<children>
+		<LayoutGroup
+			layoutDirection="horiz"
+			vertAlignment="center"
+			itemSpacings="30"
+			translation="[141,401]" >
+			<Video
+				id="videoScreen"
+				width="720"
+				height="405" />
+			<LayoutGroup
+				layoutDirection="vert"
+				horizAlignment="left"
+				itemSpacings="22" >
+				<!-- <Rectangle width="255"> -->
+					<LayoutGroup
+						layoutDirection="horiz"
+						vertAlignment="top"
+						itemSpacings="10" >
+						<Label
+							text="Title:"
+			       			wrap="false"
+			       			color="0x464646FF"
+			       			font="font:MediumBoldSystemFont" />
+			       		<Label
+			       			id="titleLabel"
+			       			wrap="false"
+			       			width="200"
+			       			color="0x464646FF"
+			       			font="font:SmallSystemFont" />
+					</LayoutGroup>
+					<LayoutGroup
+						layoutDirection="horiz"
+						vertAlignment="top"
+						itemSpacings="10" >
+						<Label
+							text="Place:"
+			       			wrap="false"
+			       			color="0x464646FF"
+			       			font="font:MediumBoldSystemFont" />
+			       		<Label
+			       			id="placeLabel"
+			       			wrap="false"
+			       			width="200"
+			       			color="0x464646FF"
+			       			font="font:SmallSystemFont" />
+					</LayoutGroup>
+					<LayoutGroup
+						layoutDirection="vert"
+						horizAlignment="left"
+						itemSpacings="10" >
+						<Label
+							text="Description:"
+			       			wrap="false"
+			       			color="0x464646FF"
+			       			font="font:MediumBoldSystemFont" />
+			       		<Label
+			       			id="descriptionLabel"
+			       			wrap="true"
+			       			width="255"
+			       			height="275"
+			       			color="0x464646FF"
+			       			font="font:SmallSystemFont" />
+					</LayoutGroup>
+					<LayoutGroup
+						layoutDirection="horiz"
+						vertAlignment="top"
+						itemSpacings="10" >
+						<Label
+							text="Date:"
+			       			wrap="false"
+			       			color="0x464646FF"
+			       			font="font:MediumBoldSystemFont" />
+			       		<Label
+			       			id="dateLabel"
+			       			wrap="false"
+			       			width="200"
+			       			color="0x464646FF"
+			       			font="font:SmallSystemFont" />
+					</LayoutGroup>
+				<!-- </Rectangle> -->
+			</LayoutGroup>
+		</LayoutGroup>
+	</children>
+</component>

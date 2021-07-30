@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="GridScreen" extends="Group"  initialFocus="RowList">
+    <script type="text/brightscript" uri="GridScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+	<interface>
+        <!-- Specifies the content for the Grid -->
+        <field id="content" type="node" alias="content" />
+        <field id="itemFocused" type="integer" alwaysNotify="true" />
+        <field id="selectedItem" type="integer" alwaysNotify="true" />
+    </interface>
+    <children>
+    	<LayoutGroup
+    		id="labels"
+        	translation="[1140,90]"
+        	layoutDirection="vert"
+            horizAlignment="right"
+            itemSpacings="[5]" >
+	        <Label
+	        	text="Title:"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumBoldSystemFont" />
+	        <Label
+		       	id="titleLabel"
+		       	wrap="false"
+		       	color="0x464646FF"
+		       	font="font:MediumSystemFont" />
+	   	</LayoutGroup>
+	   	<Group id="posters" translation="[0, 0]" />
+    </children>
+</component>
